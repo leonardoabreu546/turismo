@@ -117,7 +117,7 @@ body{
 .container{
     margin: 0 auto;
     max-width: 1200px;
-    gap: 24px;
+    padding: 0 10px;
 }
 
 .row{
@@ -149,19 +149,20 @@ body{
     text-align: right;
 }
 
-.card-text{
-    display: flex;          
-    flex-direction: column;  
-    gap: 10px;               
-    padding: 5px 15px;
-    margin-top: 18px;
-    line-height: 1.2;
+.cards-row{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
 }
 
-.card1 {
+@media (max-width:768px) {
+    .cards-row{
+        flex-direction: column;
+    }
+}
+
+.card {
     position: relative;
-    font-weight: 600;
-    width: 370px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -171,58 +172,64 @@ body{
     overflow: hidden;
 }
 
-.card1 img {
+.card-text{
+    display: flex;          
+    flex-direction: column;  
+    gap: 10px;               
+    padding: 15px 15px;
+    line-height: 1.2;
+}
+
+.card img {
     width: 100%;
     height: 160px;
     object-fit: cover;
 }
 
-.card1 h3 {
+.card h3 {
     font-size: 18px;
     font-weight: bold;
 }
 
-.card1 p {
+.card p {
     margin:0;
     font-size: 14px;
     color: grey; 
 }
 
-.card1 span {
+.card .time {
     font-size: 14px;
     color: grey;
     width: 100%;
     display: block;
 }
 
-.info {
+.card .info {
     display: flex;      
     gap: 2px;            
     align-items: center; 
 }
 
-.info span {
+.card .info span {
     margin: 0;           
     padding: 0;          
     line-height: 1;      
     display: inline-block; 
 }
 
-.info svg {
-    width: 38px;
+.card .info svg {
+    width: 16px;
     fill: rgb(201, 123, 74) !important;
 }
 
-.price {
+.card .price {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     right: 0;
     margin: 10px;
-    padding: 15px 25px;
-    height:25px ;
-    width: 35px;
+    padding: 4px 10px;
     border-radius: 25px;
     background-color: #ffffffe6;
     color: #c97b4a;
