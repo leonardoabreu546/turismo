@@ -132,10 +132,9 @@ body{
     }
 }
 
-.row h2{
+.main-title{
     font-size: 30px;
     font-weight: 700;
-    font-weight: bold;
 }
 
 .row p{
@@ -234,3 +233,88 @@ body{
     background-color: #ffffffe6;
     color: #c97b4a;
 }
+
+.expirence{
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.expirence-background{
+    background-color: #e8ddd04d;
+}
+
+.expirence-titles{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    gap: 10px;
+    text-align: center;
+}
+
+.expirence h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d7a5f;
+    text-align: center;
+
+}
+
+.card-category{
+    position: relative;
+}
+
+.card-category img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.card-category .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    padding: 20px;
+}
+
+.card-category .content .title{
+    font-size: 24px;
+    font-weight: 700
+}
+
+.card-category .content .sub-title{
+    font-size: 16px;
+    margin: 16px 0;
+}
+
+.card-category .content .button{
+    background-color: white;
+    color: green;
+    padding:  8px 20px;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+}
+
+.expirence-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+
+.two-cards{ 
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width:768px) {
+    .expirence-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+
