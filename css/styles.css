@@ -129,7 +129,8 @@ body{
 @media (max-width:768px) {
     .row{
         flex-direction: column;
-    }}
+    }
+}
 
 .row h2{
     font-size: 30px;
