@@ -2,7 +2,7 @@ body {
   color: #0a3d2c;
   font-family: "Segoe UI", SegoeUI, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .header {
@@ -116,7 +116,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 .container-small {
   max-width: 1000px;
@@ -156,13 +156,14 @@ body {
 
 .cards-row {
   margin-top: 30px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 }
 
 @media (max-width: 768px) {
   .cards-row {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
