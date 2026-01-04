@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entrar | Turismo Madeira</title>
+    <title>Criar conta | Turismo Madeira</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/card.css" />
@@ -14,21 +14,30 @@
   <body class="auth-body">
     <header class="auth-hero">
       <div class="container container-small">
-        <p class="auth-hero-eyebrow">Bem-vindo de volta</p>
-        <h1>Planeie a sua próxima aventura madeirense</h1>
+        <p class="auth-hero-eyebrow">Junte-se à comunidade</p>
+        <h1>Crie uma conta e receba inspiração personalizada</h1>
         <p>
-          Aceda rapidamente às suas reservas, experiências guardadas e dicas dos
-          nossos especialistas locais.
+          Reserve experiências com guias locais, guarde os seus favoritos e
+          receba alertas exclusivos sobre eventos na Madeira.
         </p>
       </div>
     </header>
     <main class="auth-main container container-small">
       <div class="card card-simple auth-form-card">
         <div class="auth-form-header">
-          <h2>Entre na sua conta</h2>
-          <p>Continue a explorar experiências únicas na ilha</p>
+          <h2>Crie a sua conta</h2>
+          <p>Leva menos de dois minutos começar a planear</p>
         </div>
         <form class="auth-form">
+          <label for="name">Nome completo</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Ex.: Sofia Andrade"
+            required
+            class="form-input"
+          />
           <label for="email">Endereço de email</label>
           <input
             type="email"
@@ -43,35 +52,47 @@
             type="password"
             id="password"
             name="password"
-            placeholder="••••••••"
+            placeholder="Mínimo 8 caracteres"
+            required
+            class="form-input"
+          />
+          <label for="confirm-password">Confirmar palavra-passe</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirm-password"
+            placeholder="Repita a palavra-passe"
             required
             class="form-input"
           />
           <div class="auth-actions">
             <label class="auth-remember">
-              <input type="checkbox" name="remember" />
-              <span>Lembrar-me</span>
+              <input type="checkbox" name="updates" />
+              <span>Quero receber novidades e ofertas</span>
             </label>
-            <a class="auth-link" href="#">Esqueceu-se da palavra-passe?</a>
+            <label class="auth-remember">
+              <input type="checkbox" name="terms" required />
+              <span>Aceito os termos e condições</span>
+            </label>
           </div>
           <button type="submit" class="btn btn-primary auth-button">
-            Iniciar sessão
+            Criar conta
           </button>
         </form>
         <p class="auth-signup">
-          Ainda não tem conta?
-          <a href="register.html">Criar conta</a>
+          Já tem conta?
+          <a href="login.html">Iniciar sessão</a>
         </p>
       </div>
       <div>
         <div class="card card-category card-extra-rounded auth-photo-card">
           <img
-            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
-            alt="Viajante a admirar as montanhas da Madeira"
+            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+            alt="Casal a contemplar o pôr do sol na costa"
           />
           <div class="content">
-            <div class="sub-title">Colecione memórias</div>
-            <div class="title">Experiências autênticas na Madeira</div>
+            <div class="sub-title">Experiências guiadas</div>
+            <div class="title">Descubra os segredos da Madeira</div>
           </div>
         </div>
       </div>
