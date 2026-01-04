@@ -137,6 +137,11 @@
   font-size: 14px;
 }
 
+.experience-cta {
+  display: flex;
+  justify-content: center;
+}
+
 .galery-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
