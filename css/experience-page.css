@@ -35,3 +35,104 @@
 .experience-info-summary .info.important {
   color: #c97b4a;
 }
+
+.experience-information {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.experience-information-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #5a6c63;
+}
+
+.experience-information-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .experience-information {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-information-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.experience-information-cards .title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #0a3d2c;
+}
+
+.reviews-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews-number {
+  font-weight: bold;
+  color: #c97b4a;
+}
+
+.reviews-score {
+  font-size: 30px;
+  color: #0a3d2c;
+  font-weight: bold;
+}
+
+.review {
+  padding: 20px 0;
+}
+
+.review-border {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.reviews-label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.review-badge {
+  background-color: #2d7a5f1a;
+  color: #2d7a5f;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.review-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-name {
+  font-weight: bold;
+}
+
+.review-date {
+  font-size: small;
+}
+
+.review-text {
+  font-size: 14px;
+}
