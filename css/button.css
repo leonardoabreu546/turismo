@@ -10,6 +10,7 @@
   border-radius: 16px;
   cursor: pointer;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  text-decoration: none;
 }
 
 .btn:focus-visible {
@@ -28,4 +29,11 @@
 
 .btn-primary:active {
   transform: translateY(0);
+}
+
+.btn-small {
+  padding: 0.65rem 1.5rem;
+  font-size: 14px;
+  border-radius: 16px;
+  font-weight: 400;
 }
