@@ -164,16 +164,18 @@ body {
   }
 }
 
-.expirence {
+.experience {
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.expirence-background {
+.experience-background {
   background-color: #e8ddd04d;
+  border-top: 1px solid #e8ddd099;
+  border-bottom: 1px solid #e8ddd099;
 }
 
-.expirence-titles {
+.experience-titles {
   display: flex;
   flex-direction: column;
   margin-bottom: 40px;
@@ -181,15 +183,15 @@ body {
   text-align: center;
 }
 
-.expirence-titles-left {
+.experience-titles-left {
   text-align: left;
 }
 
-.expirence-titles p {
+.experience-titles p {
   color: #5a6c63;
 }
 
-.expirence-titles h3 {
+.experience-titles h3 {
   font-size: 14px;
   font-weight: 600;
   color: #2d7a5f;
@@ -197,29 +199,29 @@ body {
   letter-spacing: 0.3em;
 }
 
-.expirence-titles.expirence-titles-big h3 {
+.experience-titles.experience-titles-big h3 {
   font-size: 14px;
 }
 
-.expirence-titles-big {
+.experience-titles-big {
   gap: 20px;
 }
 
-.expirence-titles-big .main-title {
+.experience-titles-big .main-title {
   font-size: 48px;
 }
 
 @media (max-width: 768px) {
-  .expirence-titles-big .main-title {
+  .experience-titles-big .main-title {
     font-size: 36px;
   }
 }
 
-.expirence-titles-big p {
+.experience-titles-big p {
   font-size: 18px;
 }
 
-.expirence-cards {
+.experience-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -230,7 +232,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .expirence-cards {
+  .experience-cards {
     grid-template-columns: repeat(1, 1fr);
   }
 }
