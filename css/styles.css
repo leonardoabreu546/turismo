@@ -184,6 +184,10 @@ body {
   text-align: center;
 }
 
+.expirence-titles-left {
+  text-align: left;
+}
+
 .expirence-titles p {
   color: #5a6c63;
 }
@@ -192,7 +196,6 @@ body {
   font-size: 14px;
   font-weight: 600;
   color: #2d7a5f;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.3em;
 }
