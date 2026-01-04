@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Entrar | Turismo Madeira</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/card.css" />
+    <link rel="stylesheet" href="./css/card-category.css" />
+    <link rel="stylesheet" href="./css/button.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+  </head>
+  <body class="login-body">
+    <header class="login-hero">
+      <div class="container container-small">
+        <p class="login-hero-eyebrow">Bem-vindo de volta</p>
+        <h1>Planeie a sua próxima aventura madeirense</h1>
+        <p>
+          Aceda rapidamente às suas reservas, experiências guardadas e dicas dos
+          nossos especialistas locais.
+        </p>
+      </div>
+    </header>
+    <main class="login-main container container-small">
+      <div class="card card-simple login-form-card">
+        <div class="login-form-header">
+          <h2>Entre na sua conta</h2>
+          <p>Continue a explorar experiências únicas na ilha</p>
+        </div>
+        <form class="login-form">
+          <label for="email">Endereço de email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="exemplo@turismo.pt"
+            required
+          />
+          <label for="password">Palavra-passe</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="••••••••"
+            required
+          />
+          <div class="login-actions">
+            <label class="login-remember">
+              <input type="checkbox" name="remember" />
+              <span>Lembrar-me</span>
+            </label>
+            <a class="login-link" href="#">Esqueceu-se da palavra-passe?</a>
+          </div>
+          <button type="submit" class="btn btn-primary login-button">
+            Iniciar sessão
+          </button>
+        </form>
+        <p class="login-signup">
+          Ainda não tem conta?
+          <a href="#">Criar conta</a>
+        </p>
+      </div>
+      <div>
+        <div class="card card-category card-extra-rounded login-photo-card">
+          <img
+            src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&amp;fit=crop&amp;w=1200&amp;q=80"
+            alt="Viajante a admirar as montanhas da Madeira"
+          />
+          <div class="content">
+            <div class="sub-title">Colecione memórias</div>
+            <div class="title">Experiências autênticas na Madeira</div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
