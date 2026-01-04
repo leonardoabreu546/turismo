@@ -168,7 +168,8 @@ body {
 }
 
 .expirence {
-  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .expirence-background {
@@ -187,7 +188,7 @@ body {
   color: #5a6c63;
 }
 
-.expirence h3 {
+.expirence-titles h3 {
   font-size: 14px;
   font-weight: 600;
   color: #2d7a5f;
