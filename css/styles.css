@@ -75,22 +75,19 @@ body {
   flex-wrap: wrap;
 }
 
-.box {
+.card-category-simple {
   font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: white;
-  border-radius: 8px;
   padding: 24px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   width: 140px;
   text-align: center;
 }
 
-.icon {
+.card-category-simple .icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,7 +105,7 @@ body {
     flex-direction: column;
   }
 
-  .box {
+  .card-category-simple {
     width: 100%;
   }
 }

@@ -19,6 +19,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.experience-info-summary {
+  overflow: visible;
+}
 
 .experience-info-summary .title {
   text-transform: uppercase;
